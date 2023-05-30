@@ -1,0 +1,10 @@
+body{
+    background-color: #e9c46a;
+}
+.pregunta{
+    font-weight: 600;
+    color: chocolate;
+}
+.respuesta{
+    color: #f06947;
+}
