@@ -1,6 +1,6 @@
-#encabezado{
-    padding-right: 180px;
-    padding-left: 180px;
+#encabezado{ /* empieza el header*/
+    margin: 0 auto;
+    max-width: 1570px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -17,8 +17,9 @@ p a{
     display: flex;
 }
 #enc1 h4{
+    font-weight: 700;
     font-size: larger;
-    padding: 5px;
+    padding-right: 5px;
     color: black;
     border-bottom: 2px solid;
     border-color: grey;
@@ -29,13 +30,68 @@ p a{
     flex-direction: row;
     font-weight: 700;
 }
+#enc2 h4 a{
+    color: black;
+    text-decoration: none;
+}
 #enc2 h4{
     padding: 10px;
     border: 1px solid black;
 }
-#enc2 picture img{
-    padding: 10px;
+#enc2 h4 img{
     width: 25px;
+    height: 25px;
+}                  /*Termina el header*/
+main{          /*empieza el main*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1570px;
+    margin: 0 auto;
+}
+/*las zapatillas*/
+.producto{
+    flex-direction: column;
+}
+.img-container{
+    position:relative;
+}
+.producto .img-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.producto:hover .img-hover{
+    opacity: 1;
+    border: 1px solid;
+}
+.producto img{
+    width: 100%;
+}
+.producto{
+    margin-left: 5px;
+}
+/*precio*/
+.producto .precio{
+    position: relative;
+    bottom: 30px;
+    background-color: white;
+    width: 50px;
+    transition: all 0.4s ease-in-out;
+}
+.producto:hover .precio{
+    bottom: 50px;
+    
+}
+.producto .precio p{
+    margin: 0;
+    font-size: 0.7em;
+}
+
+img{     /*footer*/
+    width: 385px;
+    height: 385px;
 }
 .logos{
     justify-content: center;
