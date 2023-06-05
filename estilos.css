@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 #encabezado{ /* empieza el header*/
     margin: 0 auto;
     max-width: 1570px;
@@ -24,25 +25,18 @@ p a{
     border-bottom: 2px solid;
     border-color: grey;
 }
-#esc1 h4{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+#enc2{
     font-weight: 700;
-}
-#enc2 h4 a{
+    display: flex;
+    align-items: center;
     color: black;
-    text-decoration: none;
-}
-#enc2 h4{
-    padding: 10px;
+    padding: 6px;
     border: 1px solid black;
-}
-#enc2 h4 img{
-    width: 25px;
-    height: 25px;
-}                  /*Termina el header*/
-main{          /*empieza el main*/
+}                
+ /*Termina el header*/
+
+/*empieza el main*/
+main{          
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -50,6 +44,16 @@ main{          /*empieza el main*/
     margin: 0 auto;
 }
 /*las zapatillas*/
+.producto h3{
+    font-size: small;
+    font-weight: 500;
+    margin-top: -25px;
+}
+.producto h4{
+    font-size: smaller;
+    font-weight: 300;
+    margin-top: -15px;
+}
 .producto{
     flex-direction: column;
 }
@@ -82,24 +86,34 @@ main{          /*empieza el main*/
 }
 .producto:hover .precio{
     bottom: 50px;
-    
 }
 .producto .precio p{
     margin: 0;
     font-size: 0.7em;
 }
-
-img{     /*footer*/
+img{   
     width: 385px;
     height: 385px;
 }
+/*footer*/
 .logos{
-    justify-content: center;
+    width: 35px;
+    height: 35px;
+}
+footer ul{
     display: flex;
-    width: 30px;
-    height: 30px;
+    justify-content: center;
+}
+footer ul li{
+    list-style: none;
 }
 footer{
-    justify-content: center;
-    display:flex;
+    max-width: 1570px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer p{
+    font-size:larger;
+    font-family: 'Barlow Condensed', sans-serif;
 }
