@@ -1,38 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
-#encabezado{ /* empieza el header*/
+header{ /* empieza el header*/
     margin: 0 auto;
     max-width: 1570px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-}
-p{
-    padding: 5px;
-}
-p a{
-    color: gray;
-    text-decoration: none;
+    margin-bottom: 7px;
 }
 #enc1{
+    margin-left: -23px;
+    list-style: none;
     font-size: small;
     display: flex;
 }
-#enc1 h4{
+#enc1 ul{
+    list-style: none;
+    display: flex;
+}
+#enc1 ul li .as{
+    list-style: none;
+    text-decoration: none;
+    color: gray;
+    margin-right: 5px;
+}
+#h4{
+    color: black;
+    text-decoration: none;
     font-weight: 700;
     font-size: larger;
     padding-right: 5px;
-    color: black;
     border-bottom: 2px solid;
     border-color: grey;
 }
 #enc2{
+    text-decoration: none;
     font-weight: 700;
     display: flex;
     align-items: center;
-    color: black;
-    padding: 6px;
+    padding: 9px;
     border: 1px solid black;
-}                
+}  
+#enc2 a{
+    text-decoration: none;
+    color: black;
+
+}              
 /*Termina el header*/
 
 /*empieza el main*/
@@ -47,7 +59,7 @@ main{
 .producto h3{
     font-size: small;
     font-weight: 500;
-    margin-top: -25px;
+    margin-top: -20px;
 }
 .producto h4{
     font-size: smaller;
