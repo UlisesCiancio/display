@@ -33,7 +33,7 @@ p a{
     padding: 6px;
     border: 1px solid black;
 }                
- /*Termina el header*/
+/*Termina el header*/
 
 /*empieza el main*/
 main{          
@@ -69,6 +69,7 @@ main{
 .producto:hover .img-hover{
     opacity: 1;
     border: 1px solid;
+    transition-duration: 0.8s;
 }
 .producto img{
     width: 100%;
@@ -80,11 +81,15 @@ main{
 .producto .precio{
     position: relative;
     bottom: 30px;
-    background-color: white;
+    left: 5px;
+    background-color: #eceff1;
+    color:rgb(255, 72, 0);
     width: 50px;
     transition: all 0.4s ease-in-out;
 }
 .producto:hover .precio{
+    color: black;
+    background-color: white;
     left: 5px;
     bottom: 50px;
 }
